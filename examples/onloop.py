@@ -15,6 +15,8 @@ __description__ = ''
 
 
 # standard libraries
+import time
+import resource
 import argparse
 # local libraries
 from app.common.firstPerson import FirstPerson
@@ -37,14 +39,19 @@ def main():
         "You do not effect me.",
         "I guess you are talking me.",
         "Are you talking with me?"
-    ]
+    ] * 10000
+    len_sample = len(samples)
+
+    time_start = time.perf_counter()
 
     firstPerson = FirstPerson()
     freq = firstPerson.frequency(samples)
-    match = firstPerson.match(samples)
-
     print(freq)
-    print(match)
+
+    time_elapsed = (time.perf_counter() - time_start)
+    memMb=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1024.0/1024.0
+    print("%s samples %5.1f secs %5.1f MByte" % (len_sample, time_elapsed,memMb))
+
 
 if __name__ == '__main__':
     main()
