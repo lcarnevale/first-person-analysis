@@ -1,16 +1,16 @@
 # -*- coding: utf-8 -*-
 
-"""First Person Singular Prronoun Analysis
+"""Web Server controller
 
 .. _Google Python Style Guide
     https://github.com/google/styleguide/blob/gh-pages/pyguide.md
-
 """
 
 __copyright__ = 'Copyright 2019, University of Messina'
 __author__ = 'Lorenzo Carnevale <lorenzocarnevale@gmail.com>'
 __description__ = ''
 __credits__ = ''
+
 
 # standard libraries
 import argparse
