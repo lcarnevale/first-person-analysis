@@ -1,5 +1,6 @@
 aniso8601==7.0.0
 Click==7.0
+-e git+https://github.com/lcarnevale/first-person-analysis.git@680f4ed1c522651fc7414ede9448854c350a8fbe#egg=first_person
 Flask==1.1.1
 Flask-RESTful==0.3.7
 itsdangerous==1.1.0
