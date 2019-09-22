@@ -1,12 +1,19 @@
 aniso8601==7.0.0
 Click==7.0
--e git+https://github.com/lcarnevale/first-person-analysis.git@680f4ed1c522651fc7414ede9448854c350a8fbe#egg=first_person
+cycler==0.10.0
+-e git+https://github.com/lcarnevale/first-person-analysis.git@7fc3d7ceeab8fe5caa60e690a6d8ee47faba954d#egg=first_person
 Flask==1.1.1
 Flask-RESTful==0.3.7
 itsdangerous==1.1.0
 Jinja2==2.10.1
+kiwisolver==1.1.0
 MarkupSafe==1.1.1
+matplotlib==3.1.1
 nltk==3.4.5
+numpy==1.17.2
+pyparsing==2.4.2
+python-dateutil==2.8.0
 pytz==2019.1
 six==1.12.0
+tqdm==4.36.1
 Werkzeug==0.15.4
