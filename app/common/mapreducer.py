@@ -49,4 +49,5 @@ class SimpleMapReduce(object):
         map_responses = self.pool.map(self.map_func, inputs, chunksize=chunksize)
         partitioned_data = self.partition(itertools.chain(*map_responses))
         reduced_values = self.pool.map(self.reduce_func, partitioned_data)
+        self.pool.terminate()
         return reduced_values
