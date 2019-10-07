@@ -10,7 +10,7 @@ WORKDIR /opt/app
 # update source
 RUN apt update && \
 		apt upgrade -y && \
-    apt install -y python3 python3-pip && \
+    apt install -y python3 python3-pip git && \
     pip3 install -r requirements.txt
 
 COPY app /opt/app
